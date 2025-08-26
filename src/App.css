@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #90dffe, #38a3d1);
+
+ color: #fff;
+  text-align: center;
+}
+
+
+input {
+  padding: 10px;
+  width: 60%;
+  margin-right: 10px;
+  border: none;
+  border-radius: 8px;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #fff;
+  color: #38a3d1;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+}
+button:hover{
+    background-color: #90dffe;
+    color: white;
+}
+/* Container for the full editor */
+.editor-shell {
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  
+  margin: 100px 350px;
+  background-color: #fff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Toolbar styles */
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  padding: 8px;
+  background: #f8f9fa;
+  border: 1px solid #ddd;
+  align-items: center;
+}
+
+.toolbar button,
+.toolbar select,
+.toolbar input[type="color"] {
+  padding: 2px 6px;
+  font-size: 12px;
+  background: #fff;
+  
+  cursor: pointer;
+}
+
+.toolbar button:hover,
+.toolbar select:hover {
+  background-color: #90dffe;
+}
+
+.toolbar input[type="color"] {
+  padding: 0;
+  border: none;
+  width: 25px;
+  height: 25px;
+  margin-right: 0px;
+}
+
+/* Content area */
+.editor-container {
+  padding: 16px;
+  min-height: 200px;
+  position: relative;
+}
+
+/* Editable text area */
+.editor-input {
+  min-height: 150px;
+  outline: none;
+  user-select: auto;         
+  pointer-events: auto;      
+  color:black;
+}
+
+/* Placeholder styling */
+.editor-placeholder {
+  position: absolute;
+  pointer-events: none;
+  color: #999;
+  font-size: 16px;
+  padding: 16px;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.text-italic {
+  font-style: italic;
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
+.text-strikethrough {
+  text-decoration: line-through;
+}
+
+
+.editor-input ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.editor-input ol {
+  list-style-type: decimal;
+  margin-left: 20px;
+}
+.text-subscript {
+  vertical-align: sub;
+  font-size: smaller;
+}
+
+.text-superscript {
+  vertical-align: super;
+  font-size: smaller;
+}
+.toolbar-dropdown{
+  height: 20px;
+  width: 40px;
+  border: none;
+  color: #38a3d1;
+  padding: 1px 2px !important;
+
+}
